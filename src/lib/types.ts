@@ -34,6 +34,16 @@ export interface ExtractedReceipt {
   items: ReceiptItem[];
 }
 
+export type PremiumFeature =
+  | 'ai-assistant'
+  | 'warranty'
+  | 'returns'
+  | 'price-history'
+  | 'pantry'
+  | 'email-import'
+  | 'family-vault'
+  | 'advanced-analytics';
+
 export const CATEGORY_ICONS: Record<string, string> = {
   Grocery: '🛒',
   Electronics: '📦',
